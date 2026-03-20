@@ -24,11 +24,11 @@ const isApplicationsApiConfigured = () => (
 
 const initBranding = () => {
   document.querySelectorAll('.nav-logo').forEach((logo) => {
-    logo.href = 'Home.html';
+    logo.href = 'Home1.html';
     logo.innerHTML = `<img src="${DISCORD_LOGO_URL}" alt="Team Aeroz logo"><span>Aeroz</span>`;
     logo.addEventListener('click', (event) => {
       event.preventDefault();
-      window.location.href = 'Home.html';
+      window.location.href = 'Home1.html';
     });
   });
 
@@ -283,7 +283,7 @@ if (navbar) {
 }
 
 /* ==================== ACTIVE NAV LINK ==================== */
-const currentPage = (window.location.pathname.split('/').pop() || 'Home.html').toLowerCase();
+const currentPage = (window.location.pathname.split('/').pop() || 'Home1.html').toLowerCase();
 document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
   const href = (link.getAttribute('href') || '').toLowerCase();
   if (href === currentPage || (currentPage === '' && href === 'home.html')) {
